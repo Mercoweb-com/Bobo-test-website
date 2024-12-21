@@ -1,12 +1,10 @@
-const scriptURL =''
+const scriptURL ='https://script.google.com/macros/s/AKfycbxNGU0pDrrUJckJWe0pI5Cfg8oSDJHAzACh7nwklrOWlrDiIc3BtrTGOSnfTySy2roE/exec'
 
 const form = document.forms['contact-form']
 
 form.addEventListener('next', e=> { e.preventDefult()
 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => alert("Thank you! your form is submitted successfully."))
-    const sheetID='1C-O7klKaLnSN3pJBV2SAHwXhAAXrKQXV3z3btLRsH48';
-const base='https://docs.google.com/spreadsheets/d/${sheetID}/gvz/tq?';
+    .then(response => alert("Thank you! your form is submitted successfully.")
 const sheetname='users';
 const query=encodeURIComponent('select *');
 const url=' ${base}&sheet=${Sheet Name}&tq=${query}';
