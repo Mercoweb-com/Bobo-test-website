@@ -1,12 +1,11 @@
-const scriptURL ='https://script.google.com/macros/s/AKfycbxNGU0pDrrUJckJWe0pI5Cfg8oSDJHAzACh7nwklrOWlrDiIc3BtrTGOSnfTySy2roE/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzP0pBBmBaX2G6iT7pVeVTxHujCG3JathJkf30rkEx2_otSPXimfx9SAEX8hXG1tAJq/exec'
 
-const form = document.forms['contact-form']
+const form = document.form['contact-form']
 
-form.addEventListener('next', e=> { e.preventDefult()
-fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => alert("Thank you! your form is submitted successfully.")
-
-        // console.log(rep);
-    const jsO= JSON.parse(rep.subtrs(47).slice(0,-2));
-    console.log(jsO);
+form.addEventListener('submit', e => {
+    e.preventDefult()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+.then(Response => alert("Thank you! your form is submitted suceessfully."))
+.then(() => { window.location.reload(); })
+.catch(console.error( => console.error('Error!', error.message))
 })
