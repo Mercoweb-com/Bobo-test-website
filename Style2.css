@@ -1,62 +1,45 @@
-{
-  box-sizing:border-box;
-  padding:0;
-  margin:0;
-  list-style:none;
-  text decoration:none;
-  font family:'syne', sans-serif;
-  background:#0b2447;
-  color:white;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    font-size: 18px;
 }
-
-.wrapper{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
-  padding-color: #772fc9;
+body{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.section-title{
-  text-align: center;
-  font-size: 25px;
-  color: white;
-  margin-bottom: 5px;
-  padding: 0px;
- 
+.container{
+    width: 500px;
+    padding: 30px;
+    border: 1px solid, #eeeeee;
+    border-radius: 15px;
+    background-color: #b67575;
 }
-.contact-page{
-  max-width: 800px;
-  width: 100%;
-  padding: 4rem;
-  
-  .text width{
-  width: 50px;
-  }
-
-  .contact for{
+h4{
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+input{
+    width: 100px;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+#submit{
+    border: none;
+    background-color: orangered;
+    color: white;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+#submit:hover{
+    background-color: #333333;
     
-  }
+   
 }
-body {
-  background:midnightblue fixed;
- background-size: cover;
-}
-*[role="form"] {
-  max-width: 400px;
-  padding: 15px;
-  margin: 0 auto;
-  border-radius: 0.3em;
-  background-color: #f2f2f2;
- }
- 
- *[role="form"] h2 { 
-  font-family: 'Open Sans' , sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  color: white;
-  margin-top: 5%;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 4px;
- }
 
