@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-     background color:rgb(55, 55, 56) fixed;
+     background-color:rgb(55, 55, 56) fixed;
  background-size: cover;
 }
 .container{
