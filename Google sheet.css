@@ -6,25 +6,24 @@
     font-size: 18px;
 }
 body{
-    background-color:rgb(3, 8, 17);
-    background-size: cover;
+    background-color: #333333;
+ background-size: cover;
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
- 
 }
 .container{
     width: 500px;
     padding: 30px;
-    border: 1px solid, #eeeeee;
+    border: 1px solid, #979393 ;
     border-radius: 15px;
-    background-color: #979393;
+    background-color:#eeeeee;
 }
 h4{
     margin-bottom: 10px;
     font-size: 24px;
-    color: white;
+    color: rgb(240, 158, 34);
 }
 input{
     width: 100px;
@@ -45,4 +44,3 @@ input{
     
    
 }
-
