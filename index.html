@@ -3,19 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Safe connect</title>
+<title>Web Form Example</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <h1>Don't just watch, Subscribe!!!</h1>
 <div class="form-container">
 
-  <form method="post" action="https://script.google.com/macros/s/AKfycbznI6_JylZZ2wDKC7r0esJqEJVSyHQ88pf2aSiqpQWRoFo8qOxLCMNrEjuMIXFV33bn/exec" method="post">
-      <h4>Enter your details:</h4>
+  <h2>Anatu Tech Youtube Channel Subscribers</h2>
+  <form id="myForm" action="https://script.google.com/macros/s/AKfycbxj_l5TpLM8ZOlEOZnoDsmJBZ60RkgVBNX_Ge5t_rHQb0rIjKI42KJD-xMF8b69ai9cfQ/exec" method="post">
+
       <label for="FirstName">First Name:</label>
       <input type="text" id="firstName" name="FirstName" required>
       <label for="LastName">Last Name:</label>
       <input type="text" id="lastName" name="LastName" required>
+
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="Age" required>
+
+      <label for="gender">Select Gender:</label>
+      <select id="gender" name="Gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
 
       <label for="country">Select Country:</label>
       <select id="country" name="Country">
@@ -30,67 +42,61 @@
       <label for="phoneNumber">Phone Number:</label>
       <input type="text" id="phoneNumber" name="PhoneNumber" required>
 
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="Email" required>
 
+      <!-- <input type="range" name="volume" min="0" max="100" step="1">
+      <input type="color" name="preferred_color"> -->
+      <!-- <input type="number" name="quantity" min="1" max="10" step="1"> -->
+      <!-- <input type="datetime-local" name="event_datetime"> -->
+      <!-- <input type="file" name="file_upload">
+      <input type="date"> -->
 
-      <label for="age">Age:</label>
-      <input type="number" id="age" name="Age" required>
-
-      <input type="name" name="user name" placeholder="fullname" required>
-      <input type="number" name="age" placeholder ="age" required>
-    
-      <input type="name" name="user name" placeholder="fullname" required>
-      <input type="number" name="age" placeholder ="age" required>
-    
-      
-      <input type="name" name="user name" placeholder="location" required>
-      <input type="text" name="your email" placeholder="E-mail" required> </p>
-
-      <input type="hidden" name="access_key" value="">
-      <input type="password"  placeholder=" 1." required> 
-      <input type="password"  placeholder="2." required>
-      <input type="password"  placeholder="3." required>
-      <input type="password"  placeholder="4." required></p>
-      <input placeholder="9..." oninput="this.className = ''">
-      <input placeholder="10..." oninput="this.className = ''">
-      <input placeholder="11..." oninput="this.className = ''">
-      <input placeholder="12..." oninput="this.className = ''">
-
+      <label for="message">Message:</label>
+      <textarea autocapitalize="word" type="text" id="message" name="Message" required></textarea><br>
     <input class="submitButton" type="submit" value="submit" />
   </form>
 </div>
-
-<div class="form">
-
- <label for="gender">Select Gender:</label>
- <select id="gender" name="Gender">
-  <option value="male">Male</option>
-  <option value="female">Female</option>
-  <option value="other">Other</option>
-</select>
-
-<label for="country">Select Country:</label>
-<select id="country" name="Country">
-  <option value="usa">USA</option>
-  <option value="canada">Canada</option>
-  <option value="uk">UK</option>
-  <option value="nigeria">Nigeria</option>
-  <option value="others">Others</option>
-  <!-- Add more options here -->
-</select>
-
-<input type="text" name="number" placeholder ="phone number" required>
-
-
-<!-- <input type="range" name="volume" min="0" max="100" step="1">
-<input type="color" name="preferred_color"> -->
-<!-- <input type="number" name="quantity" min="1" max="10" step="1"> -->
-<!-- <input type="datetime-local" name="event_datetime"> -->
-<!-- <input type="file" name="file_upload">
-<input type="date"> -->
-</form>
+<!-- Modal HTML -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modalMessage"></p>
+  </div>
 </div>
 
-  
- <script src="index.js"></script>
- </body>
+<!-- <div>
+  <textarea name="response" rows="10" cols="30" maxlength=”200”>
+
+  </textarea>
+</div> -->
+
+<!-- <div>
+  <details>
+    <summary>Details</summary>
+    Something small enough to escape casual notice.
+  </details>
+</div>
+
+<div>
+  <table style="color: aliceblue;">
+    <tr>
+        <td>Falafel</td>
+        <td>$10.00</td>
+    </tr>
+    <tr>
+        <td>Pasta Salad</td>
+        <td>$12.00</td>
+    </tr>
+    <tr>
+        <td>Dessert</td>
+        <td>$8.00</td>
+    </tr>
+</table>
+</div> -->
+
+<script src="index.js">
+</script>
+</body>
 </html>
+
