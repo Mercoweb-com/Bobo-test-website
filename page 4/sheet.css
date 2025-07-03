@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    font-size: 18px;
+}
+
+body{
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: auto;
+    margin-top: 20px;
+}
+
+ .header img {
+    float: left;
+    width: 50px;
+    height: 60px;
+   
+  }
+
+
+  .header h1 {
+    top: 18px;
+    left: 10px;
+  }
+
+.header{
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: block; 
+    background-color: white;
+}
+
+/* Google Translate Overrides */
+html, body{
+    min-height: 0!important;
+    height: auto!important;
+    position: inherit!important;
+}
+
+
+
+/* align right google translate button */
+div#google_translate_element {
+    text-align: right;
+    border-right: 30px;
+}
+
+
+
+
+#google_translate_wrapper{
+    flex-wrap: 
+    display: flex;
+}
+
+
+#google_translate_element {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 1001;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Style Google Translate widget */
+#google_translate_element {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 14px;
+    z-index: 1001;
+  }
+  
+  /* Modify the structure to insert "Google" between "Powered by" and dropdown */
+  .goog-te-gadget span::before {
+    content: "Google ";
+    font-weight: bold;
+    margin: 0 4px;
+  }
+  
+
+
+footer{
+    
+    width: 100%;
+    display: block;
+    display: flex;
+    background-color: rgba(2, 24, 27, 0.712);
+    padding-bottom: 450px;
+    justify-content: center;
+    
+}
+footer
+
+
+
+
+image{
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+     
+  }
+
+  .con{
+    display: flex;
+    column-gap: 40px;
+    width: 380px;
+    height: 280px;
+    margin-top: 150px;
+    padding: 30px;
+    border: 1px solid, #979393 ;
+    border-radius: 30px;
+    background-color:#3e2a4bd2;
+   }
+
+.container{
+    margin-top: 10px;
+    width: 200px;
+    height: 250px;
+     padding: 30px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background:var(--clr-med);
+    box-shadow: -5px -5px 10px var(--clr-light);
+    background-color:hsla(276, 29%, 80%, 0.185);
+    
+
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+ }
+
+ .container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+
+
+
+
+h2{
+    margin-top: 40px
+    font-size: 240px;
+    color: rgb(228, 136, 16);
+
+}
+
+p{
+    color: white;
+    align-items: center;
+    margin-top: 10px;
+    justify-items: center;
+}
+
+.p2{
+    color: chocolate;
+}
+
+p2{
+    color: chocolate;
+    align-items: center;
+}
+
+
+input{
+    width: 100px;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+}
+#Back{
+    border: none;
+    background-color: rgb(119, 43, 15);
+    color: white;
+    width: 50px;
+    margin-top: 50px;
+    border-radius: 5px;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.site-footer {
+    width: 100%;
+    background-color: rgba(2, 24, 27, 0.9);
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .footer-logo h3 {
+    margin-top: 10px;
+    color: chocolate;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-links a:hover {
+    color: chocolate;
+    text-decoration: underline;
+  }
+  
+  .footer-description {
+    max-width: 800px;
+    font-size: 16px;
+    color: #cccccc;
+  }
+  
+  .footer-bottom {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 20px;
+  }
+  
+
+
+
+
+#submit:hover{
+    background-color: #333333;
+    
+   
+}
